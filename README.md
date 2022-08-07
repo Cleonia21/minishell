@@ -1,6 +1,6 @@
 # Minishell
 
-##This project is about creating a simple shell##
+## This project is about creating a simple shell
 
 ![example](https://github.com/Cleonia21/minishell/blob/master/png/example.png)
 
