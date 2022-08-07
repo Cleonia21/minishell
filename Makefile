@@ -1,6 +1,6 @@
 NAME		=	minishell
-HEADER_RDL	=	/opt/homebrew/Cellar/readline/8.1/include
-#HEADER_RDL	=	/usr/local/opt/readline/include #cleonia
+#HEADER_RDL	=	/opt/homebrew/Cellar/readline/8.1/include
+HEADER_RDL	=	/usr/local/opt/readline/include #cleonia
 #HEADER_RDL	=	/Users/cleonia/.brew/Cellar/readline/8.1.1/include #school
 HEADER		=	minishell.h
 
@@ -31,8 +31,8 @@ all: libft $(NAME)
 $(NAME): $(OBJ) $(HEADER) MAKEFILE
 	@echo "\033[0;35mКомпилю minishell...\033[0;32m"
 	@echo "\033[0;35mСоздаю исполняемый файл...\033[0;32m"
-	@$(GCC) -o $(NAME) -L/opt/homebrew/Cellar/readline/8.1/lib -lreadline $(OBJ) -L $(DIR_LIBA) -lft
-#	@$(GCC) -o $(NAME) -L/usr/local/opt/readline/lib -lreadline $(OBJ) -L $(DIR_LIBA) -lft #cleonia
+#	@$(GCC) -o $(NAME) -L/opt/homebrew/Cellar/readline/8.1/lib -lreadline $(OBJ) -L $(DIR_LIBA) -lft
+	@$(GCC) -o $(NAME) -L/usr/local/opt/readline/lib -lreadline $(OBJ) -L $(DIR_LIBA) -lft #cleonia
 #	@$(GCC) -o $(NAME) -L/Users/cleonia/.brew/Cellar/readline/8.1.1/lib/ -lreadline $(OBJ) -L $(DIR_LIBA) -lft #school
 #	@echo "DONE! Запускаю..."
 #	@./minishell

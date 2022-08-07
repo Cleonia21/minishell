@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   main.c                                             :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: celys <celys@student.21-school.ru>         +#+  +:+       +#+        */
+/*   By: ChelseyLeonia <ChelseyLeonia@student.42    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/07 16:11:32 by celys             #+#    #+#             */
-/*   Updated: 2021/11/22 07:11:58 by celys            ###   ########.fr       */
+/*   Updated: 2021/11/22 10:52:46 by ChelseyLeon      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -50,7 +50,6 @@ int	main(int argc, char **argv, char **envp)
 	main.envp = array_2d_dup(envp);
 	main.exit_status = 0;
 	signal(SIGQUIT, signal_handler);
-	rl_outstream = stderr;
 	while (1)
 		minishell(&main, &term_settings);
 	return (0);

@@ -64,7 +64,7 @@ OBJS	= $(SRCS:.c=.o)
 GCC	= gcc -Wall -Wextra -Werror
 
 .c.o :	$(HEADER)
-	@${GCC} -I libft.h -c $< -o ${<:.c=.o}
+	@${GCC} -I $(HEADER) -c $< -o ${<:.c=.o}
 	@printf "\033[2K\r$(BLUE)$(NAME): $(PURPLE)$<$(RESET)"
 
 $(NAME): ${OBJS} $(HEADER)
