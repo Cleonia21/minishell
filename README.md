@@ -1,6 +1,6 @@
 # Minishell
 
-*This project is about creating a simple shell*
+##This project is about creating a simple shell##
 
 ![example](https://github.com/Cleonia21/minishell/blob/master/png/example.png)
 
@@ -32,5 +32,8 @@ cd ~ && cd Downloads && git clone https://github.com/Cleonia21/minishell && cd m
  - run an executable using a relative or absolute path
 ```
 
+## MADE WITH LOVE BY :
 
+- [Cleonia](https://github.com/Cleonia21/)
+- [mlagranzh](https://github.com/mlagranzh)
   
